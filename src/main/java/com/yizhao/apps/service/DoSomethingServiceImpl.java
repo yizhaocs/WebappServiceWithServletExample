@@ -1,4 +1,4 @@
-package com.yizhao.apps.services;
+package com.yizhao.apps.service;
 
 
 import java.util.List;

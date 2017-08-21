@@ -1,4 +1,4 @@
-package com.yizhao.apps.services;
+package com.yizhao.apps.service;
 
 /**
  * Created by yzhao on 8/21/17.

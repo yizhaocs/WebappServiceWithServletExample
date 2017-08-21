@@ -12,4 +12,18 @@
             WEB-INF/configFiles.xml
         </param-value>
     </context-param>
+
+    <listener>
+        <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>backfillServlet</servlet-name>
+        <servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>backfillServlet</servlet-name>
+        <url-pattern>/backfill</url-pattern>
+    </servlet-mapping>
 </web-app>
