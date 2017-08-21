@@ -1,8 +1,7 @@
-package Service;
+package com.yizhao.apps.services;
 
 
 import java.util.List;
-import java.util.logging.Logger;
 
 /**
  * Created by yzhao on 8/21/17.

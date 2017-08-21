@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
 
-    <bean id="doSomethingService" class="Service.DoSomethingServiceImpl"
+    <bean id="doSomethingService" class="com.yizhao.apps.services.DoSomethingServiceImpl"
           init-method="init" destroy-method="destroy">
 
         <property name="somethingList">
