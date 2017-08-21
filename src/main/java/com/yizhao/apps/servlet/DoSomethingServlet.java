@@ -1,5 +1,6 @@
 package com.yizhao.apps.servlet;
 
+import com.yizhao.apps.service.DoSomethingService;
 import org.apache.log4j.Logger;
 import org.springframework.web.HttpRequestHandler;
 
@@ -20,10 +21,17 @@ import java.io.IOException;
  */
 public class DoSomethingServlet implements HttpRequestHandler {
     private static final Logger log = Logger.getLogger(DoSomethingServlet.class);
+    private DoSomethingService doSomethingService;
 
     public void handleRequest(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
         String mode = req.getParameter("mode");
+        try {
+            doSomethingService.create();
+        }catch (Exception e){
+
+        }
+
 
 
     }
@@ -35,5 +43,9 @@ public class DoSomethingServlet implements HttpRequestHandler {
 
     public void destroy() throws ServletException {
         System.out.println("[DoSomethingServlet.destroy]");
+    }
+
+    public void setDoSomethingService(DoSomethingService doSomethingService) {
+        this.doSomethingService = doSomethingService;
     }
 }

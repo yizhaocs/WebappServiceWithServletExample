@@ -5,6 +5,7 @@
 
     <bean id="doSomethingServlet" class="com.yizhao.apps.servlet.DoSomethingServlet"
           init-method="init" destroy-method="destroy">
+        <property name="doSomethingService" ref="doSomethingService"/>
     </bean>
 
     <bean id="doSomethingService" class="com.yizhao.apps.service.DoSomethingServiceImpl"
