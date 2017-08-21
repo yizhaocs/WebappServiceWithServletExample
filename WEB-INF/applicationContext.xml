@@ -3,15 +3,27 @@
        xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
 
+    <bean id="doSomethingServlet" class="com.yizhao.apps.servlet.DoSomethingServlet"
+          init-method="init" destroy-method="destroy">
+    </bean>
+
     <bean id="doSomethingService" class="com.yizhao.apps.service.DoSomethingServiceImpl"
           init-method="init" destroy-method="destroy">
-
+        <property name="somethingValue" value="abc" />
         <property name="somethingList">
             <list>
                 <value>qa1-aero1:3000</value>
                 <value>qa1-aero2:3000</value>
                 <value>qa1-aero3:3000</value>
             </list>
+        </property>
+
+        <property name="somethingMap">
+            <map>
+                <entry key="1" value="1-1"/>
+                <entry key="2" value="2-1"/>
+                <entry key="3" value="3-1"/>
+            </map>
         </property>
     </bean>
 </beans>
