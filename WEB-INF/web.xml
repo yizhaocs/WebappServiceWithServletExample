@@ -18,12 +18,12 @@
     </listener>
 
     <servlet>
-        <servlet-name>backfillServlet</servlet-name>
+        <servlet-name>doSomethingServlet</servlet-name>
         <servlet-class>org.springframework.web.context.support.HttpRequestHandlerServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>backfillServlet</servlet-name>
-        <url-pattern>/backfill</url-pattern>
+        <servlet-name>doSomethingServlet</servlet-name>
+        <url-pattern>/dosomething</url-pattern>
     </servlet-mapping>
 </web-app>

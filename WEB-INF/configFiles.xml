@@ -9,6 +9,7 @@
 		<property name="arguments">
 			<list>
 				<!--<value>file:///opt/opinmind/conf/ekvsummarybackfill/ekvsummarybackfill.log4j.properties</value>-->
+				<value>file:///Users/yzhao/IdeaProjects/WebappServiceWithServletExample/src/main/resources/webappServiceWithServlet.log4j.properties</value>
 			</list>
 		</property>
 	</bean>
